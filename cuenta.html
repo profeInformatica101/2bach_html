@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="contador"></h1>
+    <input type="button" onclick="cambiar()" value="Cuenta">
+    <script>
+        var contador = 0;
+
+        function cambiar(){
+            this.contador = this.contador + 1;
+            document.getElementById("contador").innerHTML = this.contador;
+
+        }
+
+    </script>
+</body>
+</html>
